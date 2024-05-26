@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Survey Form</h2>
+        <form>
+            <!-- Personal Details -->
+            <fieldset>
+                <legend>Personal Details</legend>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </fieldset>
+
+            <!-- Address -->
+            <fieldset>
+                <legend>Address</legend>
+                <label for="address">Address:</label>
+                <textarea id="address" name="address" required></textarea>
+            </fieldset>
+
+            <!-- Age Group -->
+            <fieldset>
+                <legend>Age Group</legend>
+                <label><input type="radio" name="age" value="15-20"> 15-20</label>
+                <label><input type="radio" name="age" value="20-25"> 20-25</label>
+                <label><input type="radio" name="age" value="30-35"> 30-35</label>
+                <label><input type="radio" name="age" value="40-60"> 40-60</label>
+            </fieldset>
+
+            <!-- Education Details -->
+            <fieldset>
+                <legend>Education Details</legend>
+                <!-- School -->
+                <label for="school">School Name:</label>
+                <input type="text" id="school" name="school" required>
+                <label for="school_marks">School Marks:</label>
+                <input type="number" id="school_marks" name="school_marks" required>
+                <label for="school_passing_year">School Passing Year:</label>
+                <select id="school_passing_year" name="school_passing_year" required>
+                    <option value="">Select Year</option>
+                    <option value="2020">2020</option>
+                    <option value="2021">2021</option>
+                    <option value="2022">2022</option>
+                    <option value="2023">2023</option>
+                    <option value="2024">2024</option>
+                </select>
+                <!-- College -->
+                <label for="college">College Name:</label>
+                <input type="text" id="college" name="college" required>
+                <label for="college_marks">College Marks:</label>
+                <input type="number" id="college_marks" name="college_marks" required>
+                <label for="college_passing_year">College Passing Year:</label>
+                <select id="college_passing_year" name="college_passing_year" required>
+                    <option value="">Select Year</option>
+                    <option value="2020">2020</option>
+                    <option value="2021">2021</option>
+                    <option value="2022">2022</option>
+                    <option value="2023">2023</option>
+                    <option value="2024">2024</option>
+                </select>
+            </fieldset>
+
+            <!-- Coding Experience -->
+            <fieldset>
+                <legend>Coding Experience</legend>
+                <label><input type="radio" name="coding_exp" value="Beginner"> Beginner</label>
+                <label><input type="radio" name="coding_exp" value="Intermediate"> Intermediate</label>
+                <label><input type="radio" name="coding_exp" value="Expert"> Expert</label>
+            </fieldset>
+
+            <!-- Preferred Coding Language -->
+            <fieldset>
+                <legend>Preferred Coding Language for Job Interviews</legend>
+                <select id="preferred_language" name="preferred_language">
+                    <option value="Python">Python</option>
+                    <option value="JavaScript">JavaScript</option>
+                    <option value="Java">Java</option>
+                    <option value="C++">C++</option>
+                    <option value="C#">C#</option>
+                    <option value="PHP">PHP</option>
+                    <option value="Ruby">Ruby</option>
+                    <option value="Swift">Swift</option>
+                    <option value="Kotlin">Kotlin</option>
+                    <option value="Other">Other</option>
+                </select>
+            </fieldset>
+
+            <!-- Work Experience -->
+            <fieldset>
+                <legend>Work Experience</legend>
+                <label for="company">Company Name:</label>
+                <input type="text" id="company" name="company">
+                <label for="experience">Years of Experience:</label>
+                <input type="number" id="experience" name="experience">
+            </fieldset>
+
+            <!-- Submit Button -->
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
